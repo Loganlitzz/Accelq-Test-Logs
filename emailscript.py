@@ -16,10 +16,10 @@ messages = messages.Restrict("[SenderEmailAddress] = 'do-not-reply@accelq.com'")
 #messages = messages.Restrict("[Subject] = 'Sample Report'")
 message=messages.GetFirst()
 body_content=message.body
-result=re.search(r"Duration \d\d:\d\d:\d\d",body_content)
+result=re.search(r"\d\d:\d\d:\d\d",body_content)
 jobid=message.subject[50:62]
 
-print(result.group())
+print("Duration: "+result.group())
 print(received_dt)
 print(jobid)
 
@@ -28,5 +28,5 @@ for sheet in wb:
     print(sheet)
 ws=wb['Sheet1']
 ws=wb.active
-# ws['A1'].value='Duration'
+ws['A1']='Duration'
 print(ws['A1'].value)

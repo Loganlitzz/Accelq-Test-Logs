@@ -18,15 +18,16 @@ message=messages.GetFirst()
 body_content=message.body
 result=re.search(r"\d\d:\d\d:\d\d",body_content)
 jobid=message.subject[50:62]
+duration=result.group()
 
-print("Duration: "+result.group())
+print("Duration: "+duration)
 print(received_dt)
 print(jobid)
 
-wb= load_workbook('Testrun_log.xlsx')
-for sheet in wb:
-    print(sheet)
-ws=wb['Sheet1']
-ws=wb.active
-ws['A1']='Duration'
-print(ws['A1'].value)
+# wb= load_workbook('Testrun_log.xlsx')
+# ws=wb['Sheet1']
+# ws=wb.active
+# ws['A1']='Duration'
+# print(ws['A1'].value)
+with open('log.txt',mode='a') as f:
+    f.write("\n"+jobid+", "+duration)

@@ -2064,9 +2064,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\_distutils_hack\\override.py',
    'PYMODULE'),
-  ('tracemalloc',
+  ('_py_abc',
    'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\tracemalloc.py',
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\_py_abc.py',
    'PYMODULE'),
   ('nturl2path',
    'C:\\Program '
@@ -2084,13 +2084,13 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\cookiejar.py',
    'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\tracemalloc.py',
+   'PYMODULE'),
   ('stringprep',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\_py_abc.py',
    'PYMODULE'),
   ('datetime',
    'C:\\Program '
@@ -3625,12 +3625,8 @@
  [('base_library.zip',
    'L:\\Email script\\build\\emailscript\\base_library.zip',
    'DATA'),
-  ('setuptools-65.5.0.dist-info\\WHEEL',
-   'c:\\program '
-   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\WHEEL',
-   'DATA'),
-  ('wheel-0.40.0.dist-info\\METADATA',
-   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\METADATA',
+  ('wheel-0.40.0.dist-info\\LICENSE.txt',
+   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\LICENSE.txt',
    'DATA'),
   ('setuptools-65.5.0.dist-info\\REQUESTED',
    'c:\\program '
@@ -3640,12 +3636,34 @@
    'c:\\program '
    'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\INSTALLER',
    'DATA'),
-  ('wheel-0.40.0.dist-info\\WHEEL',
-   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\WHEEL',
+  ('setuptools-65.5.0.dist-info\\top_level.txt',
+   'c:\\program '
+   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('wheel-0.40.0.dist-info\\RECORD',
+   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\RECORD',
+   'DATA'),
+  ('wheel-0.40.0.dist-info\\METADATA',
+   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\METADATA',
    'DATA'),
   ('setuptools-65.5.0.dist-info\\entry_points.txt',
    'c:\\program '
    'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\METADATA',
+   'c:\\program '
+   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\METADATA',
+   'DATA'),
+  ('wheel-0.40.0.dist-info\\WHEEL',
+   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\LICENSE',
+   'c:\\program '
+   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\LICENSE',
+   'DATA'),
+  ('setuptools-65.5.0.dist-info\\WHEEL',
+   'c:\\program '
+   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\WHEEL',
    'DATA'),
   ('setuptools-65.5.0.dist-info\\RECORD',
    'c:\\program '
@@ -3654,25 +3672,7 @@
   ('wheel-0.40.0.dist-info\\entry_points.txt',
    'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\entry_points.txt',
    'DATA'),
-  ('wheel-0.40.0.dist-info\\RECORD',
-   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools-65.5.0.dist-info\\METADATA',
-   'c:\\program '
-   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools-65.5.0.dist-info\\LICENSE',
-   'c:\\program '
-   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\LICENSE',
-   'DATA'),
-  ('wheel-0.40.0.dist-info\\LICENSE.txt',
-   'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\LICENSE.txt',
-   'DATA'),
   ('wheel-0.40.0.dist-info\\INSTALLER',
    'c:\\users\\logan\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\\localcache\\local-packages\\python310\\site-packages\\wheel-0.40.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools-65.5.0.dist-info\\top_level.txt',
-   'c:\\program '
-   'files\\windowsapps\\pythonsoftwarefoundation.python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\site-packages\\setuptools-65.5.0.dist-info\\top_level.txt',
    'DATA')],
  [])

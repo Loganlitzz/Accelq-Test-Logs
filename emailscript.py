@@ -22,28 +22,58 @@ try:
     # print("Folder name:", folder.Name)
     # print("Number of items:", folder.Items.Count)
     messages=folder.items
-    received_dt = datetime.now() - timedelta(days=1)
-    received_dt = received_dt.strftime('%m/%d/%Y %H:%M %p')
-    messages = messages.Restrict("[ReceivedTime] >= '" + received_dt + "'")
+    messages.Sort("[ReceivedTime]", True)
     messages = messages.Restrict("[SenderEmailAddress] = 'do-not-reply@accelq.com'")
-    #messages = messages.Restrict("[Subject] = 'Sample Report'")
     message=messages.GetFirst()
-    body_content=message.body
-    result=re.search(r"\d\d:\d\d:\d\d",body_content)
-    jobid=message.subject[50:62]
-    duration=result.group()
-    print("Duration: "+duration)
-    print(received_dt)
-    print(jobid)
+    print("Enter Job Id:\n")
+    id=input()
+    if(id=='0'):
+        body_content=message.body
+        result=re.search(r"\d\d: \d\d AM",body_content)
+        # print(result)
+        starttime=result.group()
+        starttime=starttime[0:2]
+        # print(starttime)
+        while(starttime!="07"):
+            message=messages.GetNext()
+            body_content=message.body
+            result=re.search(r"\d\d: \d\d AM",body_content)
+            # print(result)
+            starttime=result.group()
+        
+            starttime=starttime[0:2]
+            # print(starttime)
+        result=re.search(r"\d\d:\d\d:\d\d",body_content)
+        jobid=message.subject[50:62]
+        duration=result.group()
+
+        print("Duration: "+duration)
+        # print(received_dt)
+        print(jobid)
+    else:
+        jobid=message.subject[58:62]
+        while(id!=jobid):
+            message=messages.GetNext()
+            jobid=message.subject[58:62]
+        body_content=message.body
+        result=re.search(r"\d\d:\d\d:\d\d",body_content)
+        jobid=message.subject[50:62]
+        duration=result.group()
+
+        print("Duration: "+duration)
+        # print(received_dt)
+        print(jobid)
+
     with open('log.txt',mode='a') as f:
         f.write("\n"+jobid+", "+duration)
 
 except Exception as e:
-    print("Error accessing folder:", str(e))
+    print("Error accessing folder/Job not found:", str(e))
 
 finally:
     # log off from the session
     session.Logoff()
+    f.close()
 
 # wb= load_workbook('Testrun_log.xlsx')
 # ws=wb['Sheet1']
